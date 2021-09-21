@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+.netflix{
+    color: red; 
+    font-size:26px;
+}
+body {
+    background-color: black; 
+    color: white; 
+    font-family: 'Poppins', sans-serif;
+}  
+.navbar{ 
+    position: absolute;
+    top: 0;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 3% 5%; 
+    width: 100%;  
+    z-index: 10;
+} 
+
+.navbar_brand{ 
+width: 100px;
+height: 100%;
+}  
+
+.brand_logo{
+    width: 100%;
+    height: 100%;
+}  
+ 
+.language_drop_down{
+    background: transparent;
+    border: none;
+    color: white;      
+}  
+
+.language_drop_down:focus{
+    outline: none; 
+    background-color:transparent;
+}  
+
+.dropdown_container{ 
+    background:rgba(0,0,0,0.4);
+    padding : 0.4rem;
+    border : 1px solid white;
+}  
+
+.sign_in_button{
+    background-color: #dc030f; 
+    border: 1px solid #dc030f; 
+    color: white;
+    padding:0.25rem 0.5rem; 
+    border-radius:4px; 
+    height: 100%;
+}
+.navbar_nav_items{
+    display: flex;
+    gap: 10px;
+}  
+.hero_bg_image_container{
+    height: 75vh;
+    width: 100%; 
+}    
+
+.hero_bg_image{
+    width: 100%;
+   height: 100%;
+}     
+
+.hero_bg_overlay{
+    position: absolute;
+    inset: 0;  /*top: 0; left: 0,boottom 0,right0 */    
+    width: 100%;
+    height: 75vh; 
+    background:rgba(0,0,0,0.4)
+}   
+  
+.hero_card{ 
+    position: absolute; 
+    top: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}    
+
+.hero_title{
+    font-weight: 600; 
+    font-size:  2rem;
+}  
+
+.hero_subtitle, hero_description {
+     font-weight:400;
+    font-size: 1rem;
+}     
+
+.email_input{
+    border: none;
+    background: transparent;
+}  
+.form_container{
+    background-color: white !important; 
+    width:90%; 
+    height: 50px; 
+    position: relative;
+}   
+.email_label{
+    color: black !important; 
+    z-index: 5; 
+    position:absolute;
+}   
+.email-holder{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}  
+
+.email_input{
+    width: 100%;
+    height: 100%;
+}
+@media(min-width:768px){
+    .hero_bg_image_container{
+        height: 100vh;
+    }  
+    .hero_card{
+     left: 34%;
+     top: 50%;
+     transform: translate(-20%,-20%);
+    }
+    .hero_bg_overlay{
+        height: 100vh;
+    }   
+    .hero_title{ 
+        font-size:3rem
+    }   
+    .hero_subtitle, hero_description {
+      
+       font-size: 1.3rem;
+   }
+}
+
+@media(min-width:1024px){ 
+  .navbar{
+      padding: 2% 5%;
+  } 
+  .navbar_brand{
+      width: 150px;
+  }  
+  .language_drop_down{
+    font-size: 15px;
+  }
+  .sign_in_button{
+      padding:10px 20px; 
+      font-size: 18px;  
+  } 
+  .dropdown_container{
+      padding: 10px 5px; 
+      font-size: 18px;
+
+  } 
+  .navbar_nav_items{
+      gap: 30px;
+  }  
+ 
+}
+@media(min-width:1254 px){
+    .hero_card{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+       }
+}
